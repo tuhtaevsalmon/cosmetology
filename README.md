@@ -13,8 +13,7 @@ cosmetology/
 ├── three-handler.js    # Three.js сцена (страница контактов)
 ├── style.css           # Стили
 ├── public/
-│   ├── favicon.svg
-│   └── icons.svg
+│   └── favicon.svg
 ├── package.json
 └── vite.config.js
 ```
