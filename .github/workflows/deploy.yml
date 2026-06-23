@@ -20,9 +20,15 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Prepare static site
+        run: |
+          mkdir _site
+          cp index.html services.html contacts.html favicon.png _site/
+          cp -r assets _site/
+
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: dist
+          path: _site
 
   deploy:
     needs: upload
