@@ -5,13 +5,29 @@
     <link rel="icon" type="image/jpeg" href="./favicon.jpg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Get in touch with Lumière Beauty Clinic — book a consultation or ask us anything." />
+    <meta name="theme-color" content="#fdfbf7" />
+    <link rel="canonical" href="https://tuhtaevsalmon.github.io/cosmetology/contacts.html" />
     <title>Contacts — Lumière Beauty Clinic</title>
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Lumière Beauty Clinic" />
+    <meta property="og:title" content="Contacts — Lumière Beauty Clinic" />
+    <meta property="og:description" content="Book a consultation or send us a message — our team responds within 24 hours." />
+    <meta property="og:image" content="https://images.unsplash.com/photo-1552693673-1bf958298935?w=1200&h=630&fit=crop" />
+    <meta property="og:url" content="https://tuhtaevsalmon.github.io/cosmetology/contacts.html" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Contacts — Lumière Beauty Clinic" />
+    <meta name="twitter:description" content="Book a consultation or send us a message — our team responds within 24 hours." />
+    <meta name="twitter:image" content="https://images.unsplash.com/photo-1552693673-1bf958298935?w=1200&h=630&fit=crop" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet" />
 
     <script type="module" crossorigin src="./assets/main-f8FSjoAh.js"></script>
     <link rel="stylesheet" crossorigin href="./assets/main-CTODElOm.css">
+    <link rel="stylesheet" href="./assets/enhancements.css">
+    <script defer src="./assets/enhancements.js"></script>
   </head>
   <body>
     <header class="site-header">
@@ -29,6 +45,10 @@
             <li><a href="contacts.html">Contacts</a></li>
           </ul>
         </nav>
+        <div class="header-actions">
+          <a href="tel:+15551234567" class="header-phone">+1 (555) 123-4567</a>
+          <a href="#contact-form" class="btn btn-primary header-cta">Get In Touch</a>
+        </div>
       </div>
     </header>
 
@@ -77,9 +97,18 @@
                   </div>
                 </div>
               </div>
+
+              <div class="contact-map">
+                <iframe
+                  src="https://maps.google.com/maps?q=42%20Rose%20Avenue%2C%20New%20York%2C%20NY%2010001&z=15&output=embed"
+                  title="Lumière Beauty Clinic location map"
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
             </aside>
 
-            <section class="contact-form-wrapper fade-in">
+            <section class="contact-form-wrapper fade-in" id="contact-form">
               <form class="contact-form" novalidate>
                 <div class="form-group">
                   <label for="name">Full Name</label>
@@ -104,6 +133,64 @@
                 <button type="submit" class="btn btn-primary">Send Message</button>
               </form>
             </section>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section class="section faq-section">
+        <div class="container">
+          <div class="section-header fade-in">
+            <span class="section-label">FAQ</span>
+            <h2>Frequently Asked Questions</h2>
+            <p>Answers to what our clients ask most before their first visit.</p>
+          </div>
+          <div class="faq-list fade-in">
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span>Do the treatments hurt?</span>
+                <span class="faq-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-answer">
+                <p>Most treatments are comfortable, with only mild sensations during procedures like peels or injections. We use numbing options where needed and always explain what to expect beforehand.</p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span>How long is the recovery time?</span>
+                <span class="faq-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-answer">
+                <p>Recovery varies by treatment. Facials and LED therapy have no downtime, while peels or injections may cause mild redness for 24–48 hours. Your specialist will give you personalized aftercare guidance.</p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span>Do I need a consultation before booking?</span>
+                <span class="faq-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-answer">
+                <p>For injections and body contouring, yes — a short consultation helps us tailor the treatment to your goals and skin type. Facials and massages can be booked directly.</p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span>What payment methods do you accept?</span>
+                <span class="faq-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-answer">
+                <p>We accept all major credit cards, contactless payments, and offer flexible payment plans for higher-value treatment packages.</p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span>Can I reschedule or cancel my appointment?</span>
+                <span class="faq-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-answer">
+                <p>Yes, we ask for at least 24 hours' notice so we can offer your slot to another client. You can reschedule by phone, email, or through the contact form above.</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -150,6 +237,11 @@
               <li><a href="mailto:hello@lumierebeauty.com">hello@lumierebeauty.com</a></li>
               <li>42 Rose Avenue, New York</li>
             </ul>
+            <div class="footer-social">
+              <a href="https://instagram.com" aria-label="Instagram" target="_blank" rel="noopener">📷</a>
+              <a href="https://facebook.com" aria-label="Facebook" target="_blank" rel="noopener">📘</a>
+              <a href="https://wa.me/15551234567" aria-label="WhatsApp" target="_blank" rel="noopener">💬</a>
+            </div>
           </div>
         </div>
         <div class="footer-bottom">
@@ -158,6 +250,11 @@
       </div>
     </footer>
 
+    <a href="tel:+15551234567" class="floating-contact" aria-label="Call Lumière Beauty Clinic">
+      <span class="floating-contact-ring" aria-hidden="true"></span>
+      <span aria-hidden="true">📞</span>
+    </a>
+    <button type="button" class="back-to-top" aria-label="Back to top">↑</button>
 
   </body>
 </html>

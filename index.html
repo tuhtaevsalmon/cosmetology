@@ -5,13 +5,54 @@
     <link rel="icon" type="image/jpeg" href="./favicon.jpg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Lumière Beauty Clinic — premium cosmetology treatments in a serene, luxurious setting." />
+    <meta name="theme-color" content="#fdfbf7" />
+    <link rel="canonical" href="https://tuhtaevsalmon.github.io/cosmetology/" />
     <title>Lumière Beauty Clinic — Home</title>
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Lumière Beauty Clinic" />
+    <meta property="og:title" content="Lumière Beauty Clinic — Reveal Your Natural Radiance" />
+    <meta property="og:description" content="Premium cosmetology treatments in a serene, luxurious setting — facials, body treatments, and injections." />
+    <meta property="og:image" content="https://images.unsplash.com/photo-1552693673-1bf958298935?w=1200&h=630&fit=crop" />
+    <meta property="og:url" content="https://tuhtaevsalmon.github.io/cosmetology/" />
+    <meta property="og:locale" content="en_US" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Lumière Beauty Clinic — Reveal Your Natural Radiance" />
+    <meta name="twitter:description" content="Premium cosmetology treatments in a serene, luxurious setting." />
+    <meta name="twitter:image" content="https://images.unsplash.com/photo-1552693673-1bf958298935?w=1200&h=630&fit=crop" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet" />
 
     <script type="module" crossorigin src="./assets/main-f8FSjoAh.js"></script>
     <link rel="stylesheet" crossorigin href="./assets/main-CTODElOm.css">
+    <link rel="stylesheet" href="./assets/enhancements.css">
+    <script defer src="./assets/enhancements.js"></script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BeautySalon",
+      "name": "Lumière Beauty Clinic",
+      "image": "https://images.unsplash.com/photo-1552693673-1bf958298935?w=1200&h=630&fit=crop",
+      "telephone": "+1-555-123-4567",
+      "email": "hello@lumierebeauty.com",
+      "priceRange": "$$$",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "42 Rose Avenue",
+        "addressLocality": "New York",
+        "addressRegion": "NY",
+        "postalCode": "10001",
+        "addressCountry": "US"
+      },
+      "openingHoursSpecification": [
+        { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "09:00", "closes": "19:00" },
+        { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "10:00", "closes": "17:00" }
+      ],
+      "url": "https://tuhtaevsalmon.github.io/cosmetology/"
+    }
+    </script>
   </head>
   <body>
     <header class="site-header">
@@ -29,19 +70,34 @@
             <li><a href="contacts.html">Contacts</a></li>
           </ul>
         </nav>
+        <div class="header-actions">
+          <a href="tel:+15551234567" class="header-phone">+1 (555) 123-4567</a>
+          <a href="contacts.html" class="btn btn-primary header-cta">Book Now</a>
+        </div>
       </div>
     </header>
 
     <main>
       <!-- Hero -->
       <section class="hero">
-        <div class="container hero-content fade-in">
-          <span class="hero-label">Premium Cosmetology</span>
-          <h1>Reveal Your Natural Radiance</h1>
-          <p>Experience bespoke beauty treatments crafted with precision, care, and the finest products — where science meets elegance.</p>
-          <a href="services.html" class="btn btn-primary">Explore Services</a>
+        <div class="container hero-grid">
+          <div class="hero-content fade-in">
+            <span class="hero-label">Premium Cosmetology</span>
+            <h1>Reveal Your Natural Radiance</h1>
+            <p>Experience bespoke beauty treatments crafted with precision, care, and the finest products — where science meets elegance.</p>
+            <a href="services.html" class="btn btn-primary">Explore Services</a>
+          </div>
+          <div class="hero-media fade-in">
+            <div class="hero-media-frame">
+              <img src="https://images.unsplash.com/photo-1552693673-1bf958298935?w=800&h=1000&fit=crop" alt="Specialist performing a rejuvenating facial treatment" loading="eager" />
+            </div>
+            <div class="hero-float-card">
+              <span class="hero-float-stars">★★★★★</span>
+              <strong>4.9/5</strong>
+              <span>from 500+ reviews</span>
+            </div>
+          </div>
         </div>
-        <div class="hero-decoration" aria-hidden="true"></div>
       </section>
 
       <!-- Results Slider -->
@@ -70,7 +126,7 @@
                 </div>
               </div>
               <div class="slider-slide">
-                <img src="https://imgk.timesnownews.com/story/1537276571-massage.PNG?tr=w-1200,h-900" alt="Rejuvenation therapy massage treatment" loading="lazy" />
+                <img src="https://images.unsplash.com/photo-1600334129128-685c5582fd35?w=900&h=560&fit=crop" alt="Rejuvenation therapy massage treatment" loading="lazy" />
                 <div class="slide-caption">
                   <h3>Rejuvenation Therapy</h3>
                   <p>Restore vitality with our signature wellness rituals</p>
@@ -121,6 +177,86 @@
           </div>
         </div>
       </section>
+
+      <!-- Testimonials -->
+      <section class="section testimonials-section">
+        <div class="container">
+          <div class="section-header fade-in">
+            <span class="section-label">Testimonials</span>
+            <h2>Loved By Our Clients</h2>
+            <p>Real stories from real clients who found their confidence at Lumière.</p>
+          </div>
+          <div class="testimonials-grid">
+            <article class="testimonial-card fade-in">
+              <div class="testimonial-stars">★★★★★</div>
+              <p class="testimonial-text">"The Hydrafacial completely transformed my skin. The staff made me feel so comfortable and the results were visible immediately."</p>
+              <div class="testimonial-author">
+                <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=88&h=88&fit=crop" alt="Portrait of Emily R." loading="lazy" />
+                <div>
+                  <strong>Emily R.</strong>
+                  <span>Hydrafacial Client</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="testimonial-card fade-in">
+              <div class="testimonial-stars">★★★★★</div>
+              <p class="testimonial-text">"I was nervous about fillers, but the team walked me through everything. Natural results and such a relaxing atmosphere."</p>
+              <div class="testimonial-author">
+                <img src="https://images.unsplash.com/photo-1489424731084-a5d8b219a5bb?w=88&h=88&fit=crop" alt="Portrait of Sarah K." loading="lazy" />
+                <div>
+                  <strong>Sarah K.</strong>
+                  <span>Dermal Fillers Client</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="testimonial-card fade-in">
+              <div class="testimonial-stars">★★★★★</div>
+              <p class="testimonial-text">"Best body contouring experience I've had. Professional, precise, and the results speak for themselves."</p>
+              <div class="testimonial-author">
+                <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=88&h=88&fit=crop" alt="Portrait of Olivia M." loading="lazy" />
+                <div>
+                  <strong>Olivia M.</strong>
+                  <span>Body Contouring Client</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="testimonial-card fade-in">
+              <div class="testimonial-stars">★★★★★</div>
+              <p class="testimonial-text">"Lumière feels like a sanctuary. Every visit leaves me glowing — and the staff genuinely care about your goals."</p>
+              <div class="testimonial-author">
+                <img src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=88&h=88&fit=crop" alt="Portrait of Amara D." loading="lazy" />
+                <div>
+                  <strong>Amara D.</strong>
+                  <span>Chemical Peel Client</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Before / After -->
+      <section class="section before-after-section">
+        <div class="container">
+          <div class="section-header fade-in">
+            <span class="section-label">Real Results</span>
+            <h2>See The Difference</h2>
+            <p>Drag the slider to compare — a glimpse of the glow our treatments can reveal.</p>
+          </div>
+          <div class="before-after fade-in" data-ba>
+            <img class="ba-img ba-after" src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?w=900&h=560&fit=crop" alt="After treatment result" loading="lazy" />
+            <img class="ba-img ba-before" src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?w=900&h=560&fit=crop" alt="Before treatment result" loading="lazy" />
+            <div class="ba-divider" aria-hidden="true"></div>
+            <span class="ba-tag ba-tag-before">Before</span>
+            <span class="ba-tag ba-tag-after">After</span>
+            <input type="range" class="ba-range" min="0" max="100" value="50" aria-label="Drag to compare before and after treatment" />
+          </div>
+          <p class="ba-disclaimer">*For illustrative purposes — individual results vary by treatment and skin type.</p>
+        </div>
+      </section>
     </main>
 
     <footer class="site-footer">
@@ -145,6 +281,11 @@
               <li><a href="mailto:hello@lumierebeauty.com">hello@lumierebeauty.com</a></li>
               <li>42 Rose Avenue, New York</li>
             </ul>
+            <div class="footer-social">
+              <a href="https://instagram.com" aria-label="Instagram" target="_blank" rel="noopener">📷</a>
+              <a href="https://facebook.com" aria-label="Facebook" target="_blank" rel="noopener">📘</a>
+              <a href="https://wa.me/15551234567" aria-label="WhatsApp" target="_blank" rel="noopener">💬</a>
+            </div>
           </div>
         </div>
         <div class="footer-bottom">
@@ -153,6 +294,11 @@
       </div>
     </footer>
 
+    <a href="tel:+15551234567" class="floating-contact" aria-label="Call Lumière Beauty Clinic">
+      <span class="floating-contact-ring" aria-hidden="true"></span>
+      <span aria-hidden="true">📞</span>
+    </a>
+    <button type="button" class="back-to-top" aria-label="Back to top">↑</button>
 
   </body>
 </html>
