@@ -23,7 +23,7 @@ jobs:
       - name: Prepare static site
         run: |
           mkdir _site
-          rsync -a --exclude='.git' --exclude='.github' --exclude='_site' --exclude='_migrate_nicepage.py' ./ _site/
+          rsync -a --exclude='.git' --exclude='.github' --exclude='_site' ./ _site/
 
       - uses: actions/upload-pages-artifact@v3
         with:
