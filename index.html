@@ -2,24 +2,23 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/jpeg" href="./favicon.jpg" />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Студия эстетической косметологии Forma — уходовые ритуалы и точные техники для естественной красоты." />
-    <meta name="theme-color" content="#f6f1ea" />
+    <meta name="description" content="Lumière Beauty — лучшая студия эстетической косметологии в Москве. Уходовые ритуалы, массаж, биоревитализация." />
+    <meta name="theme-color" content="#e8b8a8" />
     <link rel="canonical" href="https://tuhtaevsalmon.github.io/cosmetology/" />
-    <title>Forma — студия эстетической косметологии</title>
+    <title>Lumière Beauty — студия эстетической косметологии</title>
 
     <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="Forma Studio" />
-    <meta property="og:title" content="Forma — студия эстетической косметологии" />
-    <meta property="og:description" content="Уходовые ритуалы и точные техники, которые подчёркивают естественную красоту." />
+    <meta property="og:site_name" content="Lumière Beauty" />
+    <meta property="og:title" content="Lumière Beauty — студия эстетической косметологии" />
+    <meta property="og:description" content="Уходовые ритуалы и точные техники для естественной красоты." />
     <meta property="og:image" content="https://tuhtaevsalmon.github.io/cosmetology/assets/images/hero.jpg" />
     <meta property="og:url" content="https://tuhtaevsalmon.github.io/cosmetology/" />
-    <meta property="og:locale" content="ru_RU" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="./assets/studio.css" />
     <script defer src="./assets/studio.js"></script>
 
@@ -27,22 +26,17 @@
     {
       "@context": "https://schema.org",
       "@type": "BeautySalon",
-      "name": "Forma — студия эстетической косметологии",
-      "description": "Уходовые ритуалы и точные техники, которые подчёркивают естественную красоту.",
+      "name": "Lumière Beauty",
+      "description": "Студия эстетической косметологии в Москве",
       "image": "https://tuhtaevsalmon.github.io/cosmetology/assets/images/hero.jpg",
       "telephone": "+7-999-123-45-67",
-      "email": "hello@forma-studio.ru",
-      "priceRange": "₽₽₽",
+      "email": "hello@lumierebeauty.com",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "ул. Большая Бронная, 12",
         "addressLocality": "Москва",
         "addressCountry": "RU"
       },
-      "openingHoursSpecification": [
-        { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "10:00", "closes": "20:00" },
-        { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "11:00", "closes": "18:00" }
-      ],
       "url": "https://tuhtaevsalmon.github.io/cosmetology/"
     }
     </script>
@@ -50,120 +44,232 @@
   <body>
     <header class="site-header">
       <div class="container header-inner">
-        <a href="index.html" class="logo">Forma <em>Studio</em></a>
-        <button class="nav-toggle" aria-label="Меню">
-          <span></span><span></span><span></span>
-        </button>
-        <nav class="main-nav" aria-label="Навигация">
+        <a href="index.html" class="logo">Lumière <span>Beauty</span></a>
+        <nav class="main-nav" id="site-nav" aria-label="Навигация">
           <ul>
             <li><a href="index.html">Главная</a></li>
             <li><a href="services.html">Услуги</a></li>
             <li><a href="contacts.html">Контакты</a></li>
           </ul>
+          <div class="nav-mobile-extra">
+            <a href="https://wa.me/79991234567" target="_blank" rel="noopener">WhatsApp</a>
+            <a href="https://t.me/lumierebeauty" target="_blank" rel="noopener">Telegram</a>
+            <a href="contacts.html" class="header-cta">Записаться</a>
+          </div>
         </nav>
         <a href="contacts.html" class="header-cta">Записаться</a>
+        <button class="nav-toggle" type="button" aria-label="Меню" aria-expanded="false" aria-controls="site-nav">
+          <span></span><span></span><span></span>
+        </button>
       </div>
     </header>
 
     <main>
-      <section class="hero-full">
-        <div class="hero-full__bg" aria-hidden="true">
-          <img src="./assets/images/hero.jpg" alt="" loading="eager" />
-          <div class="hero-full__overlay"></div>
+      <!-- Hero -->
+      <section class="np-hero">
+        <div class="np-hero__bg" aria-hidden="true">
+          <div class="np-hero__block np-hero__block--1"></div>
+          <div class="np-hero__block np-hero__block--2"></div>
         </div>
-        <div class="container hero-full__content reveal">
-          <span class="eyebrow">Студия эстетической косметологии</span>
-          <h1>Естественная красота&nbsp;— в&nbsp;тишине и&nbsp;точности</h1>
-          <p>Уходовые ритуалы и точные техники, которые подчёркивают естественную красоту.</p>
-          <a href="contacts.html" class="btn">Записаться</a>
-        </div>
-      </section>
-
-      <section class="philosophy section">
-        <div class="container philosophy__inner reveal">
-          <span class="eyebrow">Философия</span>
-          <p>Мы не меняем ваше лицо — мы возвращаем коже спокойствие, сияние и здоровый тон. Каждый сеанс начинается с внимательного диалога и заканчивается ощущением лёгкости.</p>
+        <div class="container np-hero__inner">
+          <div class="np-hero__image">
+            <img src="./assets/images/hero.jpg" alt="Процедура в Lumière Beauty" loading="eager" />
+          </div>
+          <div class="np-hero__card">
+            <h1>Лучшая студия красоты в&nbsp;Москве</h1>
+            <a href="services.html" class="btn btn-black">Подробнее</a>
+          </div>
         </div>
       </section>
 
-      <section class="section">
+      <!-- Services grid -->
+      <section class="section np-services">
         <div class="container">
-          <div class="section-head reveal">
-            <span class="eyebrow">Ритуалы</span>
-            <h2>Избранные процедуры</h2>
-            <p>Несколько направлений, с которых удобно начать знакомство со студией.</p>
+          <div class="section-title">
+            <h2>Студия эстетической косметологии</h2>
+            <p>Уходовые ритуалы и точные техники — от глубокого очищения до биоревитализации. Индивидуальный подход и спокойная атмосфера.</p>
           </div>
-          <div class="preview-grid">
-            <article class="preview-card reveal">
-              <div class="preview-card__img">
-                <img src="./assets/images/service-1.jpg" alt="Авторский ритуал «Сияние»" loading="lazy" />
-              </div>
-              <div class="preview-card__body">
-                <h3>Ритуал «Сияние»</h3>
-                <p>Глубокое очищение, массаж и восстанавливающая маска для сияющей кожи.</p>
-                <div class="preview-card__meta">
-                  <span>90 мин</span>
-                  <strong>7 500 ₽</strong>
-                </div>
-              </div>
-            </article>
-            <article class="preview-card reveal">
-              <div class="preview-card__img">
-                <img src="./assets/images/service-2.jpg" alt="Увлажняющий уход Velvet" loading="lazy" />
-              </div>
-              <div class="preview-card__body">
-                <h3>Уход «Velvet»</h3>
-                <p>Интенсивное увлажнение и барьерное восстановление для чувствительной кожи.</p>
-                <div class="preview-card__meta">
-                  <span>60 мин</span>
-                  <strong>5 500 ₽</strong>
-                </div>
-              </div>
-            </article>
-            <article class="preview-card reveal">
-              <div class="preview-card__img">
-                <img src="./assets/images/service-3.jpg" alt="Массаж лица и шеи" loading="lazy" />
-              </div>
-              <div class="preview-card__body">
-                <h3>Массаж лица и шеи</h3>
-                <p>Лимфодренаж и работа с мышечным тонусом — лицо отдыхает и свежает.</p>
-                <div class="preview-card__meta">
-                  <span>45 мин</span>
-                  <strong>4 200 ₽</strong>
-                </div>
-              </div>
-            </article>
-            <article class="preview-card reveal">
-              <div class="preview-card__img">
-                <img src="./assets/images/service-4.jpg" alt="Биоревitalизация" loading="lazy" />
-              </div>
-              <div class="preview-card__body">
-                <h3>Биоревitalизация</h3>
-                <p>Точечная работа с увлажнением и качеством кожи — деликатно и эффективно.</p>
-                <div class="preview-card__meta">
-                  <span>90 мин</span>
-                  <strong>12 000 ₽</strong>
-                </div>
-              </div>
-            </article>
-          </div>
-          <div style="text-align:center; margin-top:3rem;" class="reveal">
-            <a href="services.html" class="btn btn-ghost">Все услуги и цены</a>
+          <div class="np-services-grid">
+            <a href="services.html" class="np-service-card">
+              <img src="./assets/images/service-1.jpg" alt="Уход за лицом" loading="lazy" />
+              <span class="np-service-card__label">Уход за лицом</span>
+            </a>
+            <a href="services.html" class="np-service-card">
+              <img src="./assets/images/service-3.jpg" alt="Массаж" loading="lazy" />
+              <span class="np-service-card__label">Массаж</span>
+            </a>
+            <a href="services.html" class="np-service-card">
+              <img src="./assets/images/service-2.jpg" alt="SPA-ритуалы" loading="lazy" />
+              <span class="np-service-card__label">SPA-ритуалы</span>
+            </a>
+            <a href="services.html" class="np-service-card">
+              <img src="./assets/images/about.jpg" alt="Комплексный уход" loading="lazy" />
+              <span class="np-service-card__label">Комплексный уход</span>
+            </a>
+            <a href="services.html" class="np-service-card">
+              <img src="./assets/images/service-4.jpg" alt="Биоревитализация" loading="lazy" />
+              <span class="np-service-card__label">Биоревитализация</span>
+            </a>
+            <a href="services.html" class="np-service-card">
+              <img src="./assets/images/service-5.jpg" alt="Коррекция бровей" loading="lazy" />
+              <span class="np-service-card__label">Брови</span>
+            </a>
+            <a href="contacts.html?service=%D0%9F%D0%BE%D0%B4%D0%B0%D1%80%D0%BE%D1%87%D0%BD%D1%8B%D0%B9%20%D1%81%D0%B5%D1%80%D1%82%D0%B8%D1%84%D0%B8%D0%BA%D0%B0%D1%82" class="np-service-card">
+              <img src="./assets/images/gallery-1.jpg" alt="Подарочные сертификаты" loading="lazy" />
+              <span class="np-service-card__label">Сертификаты</span>
+            </a>
+            <a href="services.html" class="np-service-card">
+              <img src="./assets/images/service-6.jpg" alt="Пилинг" loading="lazy" />
+              <span class="np-service-card__label">Пилинг</span>
+            </a>
           </div>
         </div>
       </section>
 
-      <section class="section" style="background: var(--surface); border-block: 1px solid var(--line);">
-        <div class="container about-split">
-          <div class="about-split__img reveal">
-            <img src="./assets/images/about.jpg" alt="Интерьер студии Forma" loading="lazy" />
+      <!-- Promo -->
+      <section class="np-promo">
+        <div class="container">
+          <div class="np-promo__box">
+            <h2>Скидка 30% на первый визит</h2>
+            <a href="contacts.html" class="btn btn-outline">Подробнее</a>
           </div>
-          <div class="about-split__text reveal">
-            <span class="eyebrow">О студии</span>
-            <h2>Пространство, где никуда не спешат</h2>
-            <p>Forma — это небольшая студия в центре города. Здесь нет суеты и громких обещаний: только спокойный свет, чистые линии и работа с кожей как с живым, дышащим органом.</p>
-            <p>Мы используем профессиональную косметику и проверенные протоколы. Каждая процедура подбирается индивидуально — с учётом состояния кожи, ритма жизни и ваших ожиданий.</p>
-            <a href="contacts.html" class="btn">Записаться на консультацию</a>
+        </div>
+      </section>
+
+      <!-- Testimonials -->
+      <section class="section np-testimonials">
+        <div class="container">
+          <div class="section-title">
+            <h2>Отзывы клиентов</h2>
+          </div>
+          <div class="np-testimonial" data-testimonial-slider>
+            <div class="np-testimonial__slides">
+              <blockquote class="np-testimonial__slide is-active">
+                <div class="np-testimonial__quote">"</div>
+                <p class="np-testimonial__text">Наконец нашла место, где не пытаются продать лишнее. Анастасия внимательно выслушала, подобрала уход — кожа сияет уже после первого визита.</p>
+                <cite class="np-testimonial__author">Елена М.</cite>
+              </blockquote>
+              <blockquote class="np-testimonial__slide">
+                <div class="np-testimonial__quote">"</div>
+                <p class="np-testimonial__text">Атмосфера невероятная — тишина, забота, профессионализм. Ритуал «Сияние» стал моей ежемесячной традицией.</p>
+                <cite class="np-testimonial__author">Анна К.</cite>
+              </blockquote>
+              <blockquote class="np-testimonial__slide">
+                <div class="np-testimonial__quote">"</div>
+                <p class="np-testimonial__text">Делала биоревитализацию — всё объяснили, процедура прошла комфортно. Результат естественный, без «эффекта маски».</p>
+                <cite class="np-testimonial__author">Мария С.</cite>
+              </blockquote>
+            </div>
+            <div class="np-testimonial-nav">
+              <button type="button" data-testimonial-prev aria-label="Предыдущий отзыв">‹</button>
+              <div class="np-testimonial-dots" data-testimonial-dots></div>
+              <button type="button" data-testimonial-next aria-label="Следующий отзыв">›</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Benefits -->
+      <section class="section np-benefits">
+        <div class="container">
+          <div class="section-title">
+            <h2>Преимущества студии</h2>
+            <p>Почему клиенты возвращаются к нам снова и снова.</p>
+          </div>
+          <div class="np-benefits-grid">
+            <article class="np-benefit">
+              <div class="np-benefit__num">1</div>
+              <h3>Индивидуальный подход</h3>
+              <p>Каждый протокол подбирается под ваш тип кожи и образ жизни.</p>
+            </article>
+            <article class="np-benefit">
+              <div class="np-benefit__num">2</div>
+              <h3>Профессиональная косметика</h3>
+              <p>Работаем только с проверенными брендами и сертифицированными препаратами.</p>
+            </article>
+            <article class="np-benefit">
+              <div class="np-benefit__num">3</div>
+              <h3>Спокойная атмосфера</h3>
+              <p>Никакой суеты — только забота, тишина и время для себя.</p>
+            </article>
+            <article class="np-benefit">
+              <div class="np-benefit__num">4</div>
+              <h3>Опытный мастер</h3>
+              <p>Анастасия — косметолог с 8-летним стажем и бережным подходом.</p>
+            </article>
+            <article class="np-benefit">
+              <div class="np-benefit__num">5</div>
+              <h3>Честные рекомендации</h3>
+              <p>Не навязываем лишние процедуры — только то, что действительно нужно.</p>
+            </article>
+            <article class="np-benefit">
+              <div class="np-benefit__num">6</div>
+              <h3>Удобная запись</h3>
+              <p>Онлайн-форма, телефон или мессенджеры — выбирайте как удобнее.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Gallery -->
+      <section class="section np-gallery-section">
+        <div class="container">
+          <div class="np-gallery-cta">
+            <p>Посмотрите полный прайс-лист наших процедур</p>
+            <a href="services.html" class="btn btn-black">Смотреть услуги</a>
+          </div>
+          <div class="np-gallery-row">
+            <img src="./assets/images/gallery-2.jpg" alt="Кабинет студии" loading="lazy" />
+            <img src="./assets/images/gallery-3.jpg" alt="Уходовая процедура" loading="lazy" />
+            <img src="./assets/images/gallery-4.jpg" alt="Детали интерьера" loading="lazy" />
+            <img src="./assets/images/gallery-5.jpg" alt="Рабочее место мастера" loading="lazy" />
+          </div>
+        </div>
+      </section>
+
+      <!-- Appointment -->
+      <section class="section np-appointment">
+        <div class="container np-appointment__inner">
+          <div class="np-appointment__photo">
+            <img src="./assets/images/master.jpg" alt="Анастасия — косметолог Lumière Beauty" loading="lazy" />
+          </div>
+          <div class="np-appointment__text">
+            <h2>Записаться на приём</h2>
+            <p>Выберите удобное время — мы перезвоним для подтверждения. Первый визит начинается с консультации: обсудим состояние кожи и подберём идеальную процедуру.</p>
+            <a href="contacts.html" class="btn btn-outline-dark">Записаться</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section class="np-contact" id="contact-form">
+        <div class="container np-contact__inner">
+          <div class="np-contact__phones">
+            <div class="np-contact__icon" aria-hidden="true">☎</div>
+            <a href="tel:+79991234567">+7 (999) 123-45-67</a>
+            <a href="tel:+74991234567">+7 (499) 123-45-67</a>
+            <p class="np-contact__address">Москва, ул. Большая Бронная, 12</p>
+          </div>
+          <div class="np-contact__form-wrap">
+            <h2>Запись в студию</h2>
+            <form class="contact-form" novalidate>
+              <div class="form-group">
+                <label for="name">Имя</label>
+                <input type="text" id="name" name="name" placeholder="Ваше имя" autocomplete="name" />
+                <span class="form-error" id="name-error" role="alert"></span>
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="email@example.com" autocomplete="email" />
+                <span class="form-error" id="email-error" role="alert"></span>
+              </div>
+              <div class="form-group">
+                <label for="message">Сообщение</label>
+                <textarea id="message" name="message" placeholder="Какая процедура вас интересует?"></textarea>
+                <span class="form-error" id="message-error" role="alert"></span>
+              </div>
+              <button type="submit" class="btn btn-peach">Отправить</button>
+            </form>
           </div>
         </div>
       </section>
@@ -171,36 +277,7 @@
 
     <footer class="site-footer">
       <div class="container">
-        <div class="footer-inner">
-          <div class="footer-brand">
-            <div class="logo">Forma <em>Studio</em></div>
-            <p>Студия эстетической косметологии. Уходовые ритуалы и точные техники.</p>
-          </div>
-          <div class="footer-col">
-            <h4>Навигация</h4>
-            <ul>
-              <li><a href="index.html">Главная</a></li>
-              <li><a href="services.html">Услуги</a></li>
-              <li><a href="contacts.html">Контакты</a></li>
-            </ul>
-          </div>
-          <div class="footer-col">
-            <h4>Контакты</h4>
-            <ul>
-              <li><a href="tel:+79991234567">+7 (999) 123-45-67</a></li>
-              <li><a href="mailto:hello@forma-studio.ru">hello@forma-studio.ru</a></li>
-              <li>Москва, ул. Большая Бронная, 12</li>
-            </ul>
-            <div class="footer-social">
-              <a href="https://instagram.com" target="_blank" rel="noopener">Instagram</a>
-              <a href="https://wa.me/79991234567" target="_blank" rel="noopener">WhatsApp</a>
-            </div>
-          </div>
-        </div>
-        <div class="footer-bottom">
-          <span>&copy; 2026 Forma Studio</span>
-          <span>Пн–Пт 10:00–20:00 · Сб 11:00–18:00</span>
-        </div>
+        <p>&copy; 2026 Lumière Beauty · <a href="services.html">Услуги</a> · <a href="contacts.html">Контакты</a> · Пн–Пт 10:00–20:00, Сб 11:00–18:00</p>
       </div>
     </footer>
   </body>
